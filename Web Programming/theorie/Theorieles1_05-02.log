@@ -1,0 +1,10 @@
+<script type="text/javascript">
+	console.log("Goeiendag");			=> console is niet webpagina zelf
+	document.write("heyhey");			=> word bijna nooit gebruikt
+</script>
+
+
+javascript importeren dat staat opgeslagen in een bestand
+	<script src="app.js"></script>
+	
+	

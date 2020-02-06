@@ -1,0 +1,17 @@
+undefined = niet gedefinieerd
+0 = wel gedefinieerd maar met waarde nul
+
+Je kan te weinig of teveel argumenten aan een functie meegeven, niet de bedoeling kan leiden tot undefined waardes.
+Een fuctie kan gebruikt worden als parameter.
+
+
+function gooiDobbelsteen() {
+	// Do something
+}									=> je kan de functie gooiDobbelsteen oproepen voor en nadat deze gemaakt is.
+
+let function2() = function() {
+	// Do something
+};									=> je kan de functie function2 enkel oproepen nadat deze gemaakt is.
+
+let myFunction = (a) => a +1;
+console.log(myFunction(3));			=> eleganter voor een kortere functie (max 60char en 1 lijn). Het resultaat van het vb zal 4 zijn.
