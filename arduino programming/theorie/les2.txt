@@ -1,0 +1,60 @@
+V2.0
+
+Loops in Arduino C:
+- Een for lus wordt eigenlijk alleen gebruikt voor een delay.
+- Door het type van variabele te veranderen kunnen we de lus langer of korter maken.
+
+- Een while lus ... (zie slides)
+
+- Een do while lus ... (zie slides)
+
+
+C code vs Arduino code:
+- Bij arduino moet je steeds specifieren dat je met arduino bezig bent.
+- Zoek in de slides nog meer verschillen.
+
+----------------------------------------------------------------------------------------------------------------------------------
+
+Seriële Monitor:
+- transmitter gaat een reeks 1nen en 0len uitsturen en de receiver ontvangt deze, na 8 bits maakt hij hier een byte van. al deze bytes zijn ASCII en zo krijgt hij woorden.
+- als de transmitter te snel stuurt zal de receiver foute code ontvangen. De "transmissie-snelheid" moet dus correct zijn (eenheid = BAUD ...).
+
+void stup()
+	Serial.begin(9600);
+)
+Dit is de snelheid waarmee de bits worden gestuurd
+
+- Wat je insteld ip de transmitter als verzendsnelheid moet je ook op de receiver als ontvangsnelheid instellen.
+- 9600 is de meest standaard ingestelde waarde.
+- Hoe hoger hoe meer kans op fouten (lengte van draden speelt ook mee).
+
+- BAUD rate staat voor 2 dingen, de snelheid waarmee de IDE gaat luisteren en de snelheid waarmee hij tekens verzend.
+
+-----------------------------------------------------------------------------------------------------------------------------------
+
+Interrupts:
+- Ze gaan de codeflow beinvloeden op een manier die we niet gewoon zijn.
+- We kunnen niet eender welke pin gebruiken voor een interrupt (alleen D2 en D3).
+- we kunnen hiermee heel juist getimede dingen doen.
+
+- Een variabele volatile declareren zorgt ervoor dat als je ineens een itterupt krijgt dat variabele die op dat moment toegewezen werden niet verloren gaan en dat de toewijzing verder zal gaan na de interupt.
+
+-----------------------------------------------------------------------------------------------------------------------------------
+
+Arduino code referentie:
+- 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

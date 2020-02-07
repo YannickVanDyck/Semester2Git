@@ -1,0 +1,6 @@
+{
+    "sketch": "labo1\\opdracht2\\opdracht2.ino",
+    "board": "arduino:avr:nano",
+    "configuration": "cpu=atmega328",
+    "port": "COM4"
+}
